@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+require_relative '../lib/pencil_mustache'
+
+poignant_guide_template = <<_why
+Say something loud!  Maybe he'll use it in his examples!
+Like what?  Like "{{adjective}} {{noun}}"?
+
+Come on, seriously.  {{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}}.
+{{noun_capitalized}}.
+
+{{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}} {{noun}}.
+{{adjective_capitalized}} {{noun}}.
+
+Woohoo!  I don't know what {{adjective}} {{noun}} is, but we did it!
+We're in the book!
+_why
+
+puts "Mad libs!"
+puts "========="
+puts
+puts "From [Why's Poignant Guide to Ruby](http://mislav.uniqpath.com/poignant-guide/book/chapter-3.html)"
+puts
+print 'adjective: '
+adjective = gets.chomp
+print 'noun: '
+noun = gets.chomp
+puts
+
+doc = { :adjective => adjective,
+        :adjective_capitalized => adjective.capitalize,
+        :noun => noun,
+        :noun_capitalized => noun.capitalize }
+
+puts PencilMustache.render(poignant_guide_template, doc)
