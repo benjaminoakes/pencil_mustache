@@ -2,7 +2,7 @@
     /                                        \
     |                                        |
 
-# Pencil Mustache
+# PencilMustache
 
 Do you only need to replace some tokens?  This is all you need (Ruby 1.9+).  No need for 3000 lines of Ruby, like in Mustache proper.
 
