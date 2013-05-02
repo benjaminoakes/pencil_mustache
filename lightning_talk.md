@@ -28,7 +28,7 @@ Example with multiple tokens:
 
     why-mad-lib
  
-It's so small ([15 lines](https://github.com/benjaminoakes/pencil_mustache/blob/master/lib/pencil_mustache.rb)), you might as well copy it into your app. Or just use the same `gsub` feature when you need it.
+It's so small ([15 lines](https://github.com/benjaminoakes/pencil_mustache/blob/master/lib/pencil_mustache.rb)), you might as well copy it into your app. Or just use the same `gsub` feature when you need it.  Compare to 3000+ lines of Ruby in Mustache.
 
 [Code](https://github.com/benjaminoakes/pencil_mustache/blob/master/lib/pencil_mustache.rb).
 
