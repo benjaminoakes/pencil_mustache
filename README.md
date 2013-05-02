@@ -19,11 +19,11 @@ Quick example ([similar to Mustache](https://github.com/defunkt/mustache#usage))
 
 It's so small ([15 lines][code]), you might as well copy it into your app.  Or just use the same `gsub` feature when you need it.
 
+But if you insist, it's a gem too:
+
+    gem install pencil_mustache
+
   [code]: https://github.com/benjaminoakes/pencil_mustache/blob/master/lib/pencil_mustache.rb
-
-### But copying and pasting code is dirty!
-
-Well, [let me know you'd like a gem](https://github.com/benjaminoakes/pencil_mustache/issues/1), then.
 
 ## Contributing
 
