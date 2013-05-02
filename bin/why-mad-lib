@@ -36,6 +36,7 @@ MARKDOWN
     adjective = STDIN.gets.chomp
     print 'noun: '
     noun = STDIN.gets.chomp
+    puts
 
     puts render(adjective, noun)
   end
