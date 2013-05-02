@@ -12,7 +12,7 @@ Quick example ([similar to Mustache](https://github.com/defunkt/mustache#usage))
     >> require 'pencil_mustache' # Assuming it's in your $LOAD_PATH
     => true
     >> PencilMustache.render("Hello {{planet}}!", :planet => "World")
-    => "Hello World"
+    => "Hello World!"
     >> PencilMustache.render("Hello {{planet}}!", :planet => "Omicron Persei 8")
     => "Hello Omicron Persei 8!"
 
