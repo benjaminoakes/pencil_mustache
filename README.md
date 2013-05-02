@@ -31,6 +31,10 @@ Run the specs using:
 
     ruby spec/pencil_mustache_spec.rb
 
+Build the gem using:
+
+    gem build pencil_mustache.gemspec
+
 ## License
 
 MIT.  See LICENSE for a copy.
