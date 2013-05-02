@@ -1,15 +1,15 @@
 module PencilMustache
   class << self
     def render(template, doc)
-      template.gsub(/{{.*?}}/, curl(doc))
+      template.gsub(/{{.*?}}/, add_whiskers(doc))
     end
 
     private
 
-    def curl(doc)
-      curled = {}
-      doc.keys.each { |k| curled["{{#{k}}}"] = doc[k] }
-      curled
+    def add_whiskers(doc)
+      with_whiskers = {}
+      doc.keys.each { |k| with_whiskers["{{#{k}}}"] = doc[k] }
+      with_whiskers
     end
   end
 end
