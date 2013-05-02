@@ -8,7 +8,9 @@ Do you only need to replace some tokens?  This is all you need (Ruby 1.9+).  No 
 
 ## Installing
 
-It's so small (15 lines), you might as well copy it into your app.  Or just use the same `gsub` feature when you need it.
+It's so small ([15 lines][code]), you might as well copy it into your app.  Or just use the same `gsub` feature when you need it.
+
+  [code]: https://github.com/benjaminoakes/pencil_mustache/blob/master/lib/pencil_mustache.rb
 
 ### But copying and pasting code is dirty!
 
