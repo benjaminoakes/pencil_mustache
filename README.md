@@ -24,6 +24,15 @@ But if you insist, [it's a gem too][gem]:
 
     gem install pencil_mustache
 
+Don't need Mustache-like syntax?  Try `Kernel#sprintf` which works similarly:
+
+    >> sprintf("Hello %{planet}!", :planet => "World")
+    => "Hello World!"
+    >> sprintf("Hello %{planet}!", :planet => "Omicron Persei 8")
+    => "Hello Omicron Persei 8!"
+    >> "Hello %{planet}!" % { :planet => "World" }
+    => "Hello World!"
+
   [code]: https://github.com/benjaminoakes/pencil_mustache/blob/master/lib/pencil_mustache.rb
   [gem]:  http://rubygems.org/gems/pencil_mustache
 
